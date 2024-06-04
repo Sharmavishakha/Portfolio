@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishakha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(5, 5, 30);
+            color:white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11, 11, 69);
+            position: fixed;
+            width: -webkit-fill-available;
+            margin-top: -50px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: centre;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(139, 84, 190);
+            font-size: 1.02rem;
+        }
+        main hr{
+            border: 0px;
+            height: 1.2px;
+            background: rgb(166 104 225 / 47%);
+            margin: 50px 74px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            align-items: center;
+            height: 100vh;
+        }
+        .firstSection > div{
+            width: 30%;
+            
+        }
+        .leftSection{
+            font-size: 2rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn{
+            margin: 0 5px;
+            padding: 12px;
+            background-color: #4b1567d4;
+            color: white;
+            border: 2px solid white;
+            border-radius:6px;
+            font-size: 15px;
+            cursor: pointer;
+             
+        }
+        .btn a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        .btn:hover{
+            background-color: lavender;
+            color: blueviolet;
+        }
+        
+        .rightSection img{
+            width: 100%;
+            margin: 1px;
+        }
+        .purple{
+            color: rgb(139, 84, 190);
+        }
+        .text-gray{
+            color: grey;
+        }
+        #element{
+            color: rgb(139, 84, 190);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .secondSection h1{
+            font-size: 1.6rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: max-content;
+            height: 3px;
+            margin: 90px 0px;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+        .image-top{
+            box-shadow: aqua;
+            width: 35px;
+            position: relative;
+            top: -35px;
+            left: -16px;        
+        }
+        .text1{
+            font-size: 11px;
+            color: rgb(177 136 216);
+            margin: 0 5px;
+        }
+        .text2{
+            font-size: 9px;
+            color: rgb(228, 206, 249);
+            margin: 0 5px;
+        }
+        .vertical-text{
+            position: relative;
+            margin: 63px 0;
+            width: 150px;
+        }
+        .vertical .vertical-text a{
+            color: white;
+            text-decoration: none;
+        }
+        .vertical .vertical-text a:hover{
+            color: rgb(174, 14, 189);
+        }
+        footer{
+            background: rgb(24 21 26 / 97%);
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div {
+            width: 303px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px;
+            height: 20vh;
+        }
+        .thirdSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            align-items:flex-start;
+            text-align: center;
+            height: 100vh;
+            margin-top: 100px;
+        }
+        .thirdSection > div{
+            width: 40%;
+        }
+        .righty {
+            font-size: 35px;
+            position: relative;
+            display: block;
+            margin: 5px -10px;
+        }
+        .righty > div{
+            padding: 20px 0;
+            font-size: 19px; 
+            text-align: center;
+            position: relative;  
+        }
+        .lefty img{
+            width: 100%;
+            margin: 30px 0;
+            
+        }
+        .fourthSection{
+            display: block;
+            justify-content: space-around;
+            padding: 40px 65px;
+            align-items:flex-start;
+            height: 100vh;
+        }
+        .flexRequired{
+            display: flex;
+        }
+        .logo img{
+            padding: 10px;
+            width: 25px;
+        }
+        .logo a{
+            margin: auto;
+            text-decoration: none;
+            color: grey;
+            cursor: pointer;
+        }
+        .logo a:hover{
+            color:lavender;
+        }
+        .logo .flexRequired .mailing{
+            margin: auto;
+            text-align: center;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Vishakha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#self">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple"> Vishakha Sharma</span>
+                <div>and I am a passionate</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="resume.pdf" download>Download Resume</a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="self.png" alt="" sizes="20px">
+            </div>
+        </section>
+<hr>
+        <section id="self" class="thirdSection">
+            <div class="lefty">
+                <img src="self.png" alt="" size="20px">
+            </div>
+            <div class="righty">
+                Hello everyone...
+                <div>My name is Vishakha Sharma and I am a computer science student with a keen interest in exploring the endless possibilities of technology. With a solid foundation in computer science principles and a knack for problem-solving, I thrive in dynamic environments where creativity meets innovation.
+                    Skills & Expertise:
+                   Proficient in various programming languages including C,C++,Python
+                   Strong understanding of web development technologies like HTML, CSS, Django.
+                    <div>What Sets Me Apart:</div>
+                   What truly sets me apart is my insatiable appetite for learning and my ability to adapt quickly to new technologies. And my greatest strength is my sincerity and hardworking nature..</div>
+            </div>
+        </section>
+
+<hr>
+        <section id="projects" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="app.png" alt="">
+                    <div class="vertical-text">App to assign Zodiac sign 
+                        <div class="text1">using android studio</div>
+                        <div class="text2">This is a basic app that can predict the zodiac sign for a person based upon there birth month</div>
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="">
+                    <div class="vertical-text">
+                        <a href="https://github.com/Sharmavishakha/Computer_Vision-Live_Face_detection">Face recognition</a>
+                        <div class="text1">using computer vision</div>
+                        <div class="text2">This project is a basic project of computer vision. It is detecting human face that comes near the screen .</div>
+                        
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="image.png" alt="">
+                    <div class="vertical-text">
+                        <a href="https://github.com/Sharmavishakha/Blur-faces-in-live-feed-using-openCV-and-python">Blur face during live feed</a>
+                        <div class="text1">using computer vision</div>
+                        <div class="text2">In this project we can blur the faces during the live feed and that has various application in day to day life.</div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text" >
+                        <a href="https://github.com/Sharmavishakha/Weather-app">API based Weather website</a> 
+                        <div class="text1">using HTML,CSS & JS</div>
+                        <div class="text2">This is a website that is predicting the temperature and other aspects of environment from the api attached with it.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+<hr>        
+        <section id="contact" class="fourthSection">
+            <h1>Contact ME</h1>
+            <div class="logo">
+                <div class="flexRequired">
+                    <img src="linkedin.png" alt="" size="3px">
+                    <a href="https://www.linkedin.com/in/vishakha-sharma-228b7026b/">Vishakha Sharma</a>
+                </div>
+                <div class="flexRequired">
+                    <img src="github-logo.png" alt="" size="3px">
+                    <a href="https://github.com/Sharmavishakha">Sharmavishakha</a>
+                </div>
+                <div class="flexRequired">
+                    <img src="instagram.png" alt="" size="3px">
+                    <a href="https://www.instagram.com/vishakhas151?igsh=MWNxMGpneWIydzdocA==">VishakhaS</a>
+                </div>
+                <div class="flexRequired">
+                    <img src="mail.png" alt="" size="3px">
+                    <div class="mailing">vishakhasharma661@gmail.com  |  vsharma1_be22@thapar.edu</div>
+                </div>
+                <div class="flexRequired">
+                    <img src="telephone.png" alt="" size="3px">
+                    <div class="mailing">7082011912</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+        <div class="footer-rights">
+            Copyright © vishakhaportfolio.com | All rights reserved ❤️
+        </div>
+    </footer>
+
+    <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Programmer', 'Coder','Web developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
